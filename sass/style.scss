@@ -512,16 +512,17 @@ footer {
         width: 100%;
 		ul {
 			overflow: auto;	
+            li:hover {
+                background-color: inherit;
+                >ul{
+                    display: none;
+                }
+            }
 		}
 		ul ul {
         	width: 100%;
     	}
-		li:hover {
-    		background-color: inherit;
-			ul{
-				display: none;
-			}
-    	}
+		
     }
 
     /*menu controls*/
@@ -529,7 +530,7 @@ footer {
         display: none;
     }
     #menu-check:checked ~ header>nav>ul>li {
-        display: block;
+        display: block !important;
     } 
 
     #n2-level:checked  ~ header>nav>ul>li>ul {

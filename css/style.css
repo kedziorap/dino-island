@@ -511,19 +511,19 @@ footer {
     width: 100%; }
     nav ul {
       overflow: auto; }
+      nav ul li:hover {
+        background-color: inherit; }
+        nav ul li:hover > ul {
+          display: none; }
     nav ul ul {
       width: 100%; }
-    nav li:hover {
-      background-color: inherit; }
-      nav li:hover ul {
-        display: none; }
 
   /*menu controls*/
   #menu-check:not(:checked) ~ header > nav > ul > li {
     display: none; }
 
   #menu-check:checked ~ header > nav > ul > li {
-    display: block; }
+    display: block !important; }
 
   #n2-level:checked ~ header > nav > ul > li > ul {
     display: block;
